@@ -1,0 +1,309 @@
+/* ==================== Google Font ===================== */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans+JP&family=Roboto+Condensed&display=swap");
+
+/* ==================== Root Variable =================== */
+:root {
+  --body-font: "Roboto Condensed, Noto Sans JP", sans-serif;
+  --bg-primary: #ffffff;
+  --bg-secondary: #b4d2ff;
+  --title-color: #2a2438;
+  --title-secondary: #5d82e9;
+  --header-height: 4rem;
+  --big-font-size: 2rem;
+  --normal-font-size: 1rem;
+}
+
+/* Clear */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  background-color: var(--bg-primary);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--title-secondary);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================ Heaader =============================== */
+
+.header {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--bg-secondary);
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: "Dancing Script", sans-serif;
+  background-color: var(--title-secondary);
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*  ======================  Navbar ========================= */
+.nav {
+  top: 40%;
+  left: 75%;
+  width: 30%;
+  position: fixed;
+  z-index: 30;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav__menu {
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+.nav__menu-list {
+  color: var(--title-color);
+}
+
+.nav__sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__sosmed-info {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav__icon {
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.nav__icon:hover {
+  color: var(--title-secondary);
+}
+
+/* ============================ Main Contentt ============================== */
+
+.main {
+  min-height: 100vh;
+  position: relative;
+  margin-top: var(--header-height);
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__biodata {
+  margin-top: var(--header-height);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+}
+
+.main__biodata-img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+.main__biodata-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.biodata-info-list {
+  padding: 0.5rem;
+  color: #212529;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+/* Gallery */
+.article__container {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.article__title {
+  text-align: center;
+  margin: 2rem 0;
+}
+.gallery {
+  list-style: none;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.gallery li {
+  overflow: hidden;
+}
+
+.gallery li img {
+  object-fit: cover;
+  height: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.gallery li img:hover {
+  transform: scale(1.2);
+}
+.item-0 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* ========================== Artickel ============================= */
+.article {
+  margin-top: var(--header-height);
+}
+
+.article p {
+  font-smooth: antialiased;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+}
+
+.unsplash {
+  font-weight: 700;
+}
+
+/* ======================== Form Contact ============================*/
+.input__container {
+  padding: 10px 0px;
+  width: 60%;
+  flex-direction: column;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.input__title {
+  margin-bottom: 2rem;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form__input {
+  height: 2.25rem;
+  padding: 0.5rem 0.75rem;
+  width: 80%;
+  font-size: var(--normal-font-size);
+  line-height: 1.5;
+  color: var(--title-color);
+  background: none;
+  border: none;
+  border-bottom: 2px solid #444;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+label {
+  width: 20%;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--title-secondary);
+  background: var(--bg-secondary);
+  box-shadow: none;
+}
+
+.result__btn {
+  padding: 1rem 1.5rem;
+  background-color: var(--bg-secondary);
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  border: 2px solid var(--light-text-color);
+  letter-spacing: 0.1;
+  transition: all 1s;
+  width: 60%;
+  cursor: pointer;
+}
+
+.result__btn:hover {
+  background-color: var(--title-secondary);
+}
+
+/* ======================== Footer ========================== */
+.footer {
+  background-color: var(--bg-secondary);
+  text-align: center;
+  margin-top: var(--header-height);
+  padding: 2rem 3rem;
+}
+
+.footer__title {
+  font-weight: 700;
+}

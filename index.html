@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS - Pemrograman Web</title>
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">NS &#128511;</div>
+        <h1>Codegame</h1>
+      </div>
+    </header>
+
+    <nav class="nav">
+      <div class="nav__container container">
+        <ul class="nav__menu">
+          <li>
+            <a href="https://ump.ac.id" class="nav__menu-list" target="_blank"
+              >UMP</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://fts.ump.ac.id"
+              target="_blank"
+              class="nav__menu-list"
+              >Fts Ump</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://informatika.ump.ac.id"
+              target="_blank"
+              class="nav__menu-list"
+              >TI UMP</a
+            >
+          </li>
+        </ul>
+        <div class="nav__sosmed">
+          <ul>
+            <li class="nav__sosmed-info">
+              <a href="https://www.instagram.com/ump.ac.id/" target="_blank"
+                ><i class="bx bxl-instagram nav__icon"></i
+              ></a>
+            </li>
+            <li class="nav__sosmed-info">
+              <a href="https://www.facebook.com/ump.ac.id/" target="_blank"
+                ><i class="bx bxl-facebook nav__icon"></i
+              ></a>
+            </li>
+            <li class="nav__sosmed-info">
+              <a
+                href="https://www.youtube.com/channel/UCot5aqu6rlsx10XLMOIJxeg"
+                target="_blank"
+                ><i class="bx bxl-youtube nav__icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- Biodata -->
+      <div class="main__container container">
+        <div class="main__biodata">
+          <div class="main__biodata-wrapper">
+            <img src="assets/img/saya.jpg" alt="" class="main__biodata-img" />
+          </div>
+
+          <div class="main__biodata-info">
+            <table class="main__biodata-wrapper">
+              <tr>
+                <td class="biodata-info-list">Nama</td>
+                <td class="biodata-info-list">: Nelsen Septa Henidar</td>
+              </tr>
+              <tr>
+                <td class="biodata-info-list">NIM</td>
+                <td class="biodata-info-list">: 2003040125</td>
+              </tr>
+              <tr>
+                <td class="biodata-info-list">Prodi</td>
+                <td class="biodata-info-list">: Teknik Informatika</td>
+              </tr>
+              <tr>
+                <td class="biodata-info-list">Alamat</td>
+                <td class="biodata-info-list">: Margasari, Tegal</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- Artickel -->
+        <div class="article__container">
+          <h1 class="article__title">Website stok gambar gratis</h1>
+          <ul class="gallery">
+            <li class="item-0">
+              <img src="assets/img/building/city5.jpg" alt="Building" />
+            </li>
+            <li><img src="assets/img/mac11.jpg" alt="Macbook Pro" /></li>
+            <li><img src="assets/img/building/city4.jpg" alt="Building" /></li>
+          </ul>
+          <article class="article">
+            <p>
+              <a href="https://unsplash.com/" target="_blank" class="unsplash"
+                >Unsplash</a
+              >
+              adalah salah satu platform yang mewadahi kita untuk berbagi,
+              khususnya karya-karya foto yang kita miliki. Saya katakan wadah
+              berbagi karena unsplash memang tempat para fotografer untuk
+              membagikan fotonya secara cuma-cuma. Dengan demikian, siapapun
+              dapat memanfaatkan foto yang tersedia di unsplash secara gratis.
+              Maka, tidak mengherankan kini kita sering menemukan materi
+              presentasi yang menarik, desain iklan atau web yang estetik, yang
+              kebanyakan menggunakan foto-foto yang tersedia di unspash, dengan
+              kualitas yang luar biasa tentunya.
+            </p>
+            <p>
+              Ada puluhan bahkan ratusan ribu fotografer dari banyak negara yang
+              berkontribusi di unsplash. Maka dari itu, ada banyak foto super
+              bagus dan super kreatif yang dapat kamu temui. Selain itu, karya
+              foto dengan berbagai genre juga dapat dengan mudah didapatkan,
+              mulai dari nature, architecture, human, animals, travel, food &
+              drink, fashion, dan masih banyak genre lainnya.
+            </p>
+          </article>
+        </div>
+
+        <!-- Form Contact -->
+        <form class="input__container">
+          <h1 class="input__title">Form Input</h1>
+          <div class="form__group">
+            <label for="harga">Harga</label>
+            <input
+              type="number"
+              id="harga"
+              class="form__input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__group">
+            <label for="diskon">Diskon</label>
+            <input
+              type="number"
+              id="diskon"
+              class="form__input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__group">
+            <label for="total">Total</label>
+            <input
+              type="number"
+              id="total"
+              class="form__input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__group">
+            <label for="bayar">Bayar</label>
+            <input
+              type="number"
+              id="bayar"
+              class="form__input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__group">
+            <label for="kembali">Kembali</label>
+            <input
+              type="number"
+              id="kembali"
+              class="form__input"
+              autocomplete="off"
+            />
+          </div>
+          <button type="button" class="result__btn" id="hasil">Hasil</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__title">Copyright &copy; Codegame</p>
+    </footer>
+  </body>
+</html>
